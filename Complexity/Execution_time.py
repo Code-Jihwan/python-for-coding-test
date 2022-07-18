@@ -1,7 +1,7 @@
 import time
-
 from numpy import array
 from prometheus_client import Summary
+
 start_time = time.time()  #측정 시작 (현재시간 반환에서 start_time 넣음.)
 
 #프로그램 소스코드 작성
@@ -15,4 +15,4 @@ for i in array:
 print(summary)            #결과출력
 
 end_time = time.time()    #측정 종료
-print("Time :", end_time - start_time)  #수행 시간 출력 (계산해서)
+print("time :", end_time - start_time)  #수행 시간 출력 (계산해서)
